@@ -1,0 +1,11 @@
+---
+import { SITE } from '~/utils/config';
+import  lightLogo  from '~/assets/images/logo/Ruiz_Lizondo.svg'
+import darkLogo from "~/assets/images/logo/icono_negro_blanco.png"
+---
+
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+ {SITE?.name}
+ <img class="block dark:hidden" src={lightLogo} alt="Your Logo" />
+ <img class="hidden dark:block" src={darkLogo} alt="Your Logo" />
+</span>

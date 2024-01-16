@@ -1,8 +1,7 @@
 ---
 import { SITE } from '~/utils/config';
-import logolightURL from '~/assets/images/logo/icono_blanco_negro.png';
-import logodarkURL from '~/assets/images/logo/icono_negro_blanco.png';
-
+import logoURL from '~/assets/images/logo/icono_blanco_negro.png';
+console.log("logoURL:", logoURL);
 ---
 <!--
 <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
@@ -11,12 +10,7 @@ import logodarkURL from '~/assets/images/logo/icono_negro_blanco.png';
 </span>
 -->
 <div class="flex items-center">
-    <!-- Logo para Modo Claro -->
-  <img src={logolightURL.src} alt="Logo GAF Ruiz Lizondo" class="h-16 w-auto dark:hidden" />
-
-  <!-- Logo para Modo Oscuro -->
-  <img src={logodarkURL.src} alt="Logo GAF Ruiz Lizondo" class="h-16 w-auto hidden dark:block" />
-
+    <img src={logoURL.src} alt="Logo de Ruiz Lizondo" class="h-10 w-auto" />
     <span class="ml-2 text-2xl md:text-xl font-bold text-gray-900 dark:text-white">
       {SITE?.name}
     </span>
