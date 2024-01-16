@@ -3,6 +3,9 @@ site:
   site: 'https://gafruizlizondo.pages.dev'
   base: '/'
   trailingSlash: false
+  Logo: '~/assets/images/logo/Ruiz_Lizondo.svg'
+  icono_blanco: '~/assets/images/logo/icono_blanco_negro.png'
+  icono_negro:  '~/assets/images/logo/icono_negro_blanco.png'
 
   googleSiteVerificationId: false
 
@@ -16,7 +19,7 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: GAF Ruiz Lizondo SL
+    site_name: 'GAF Ruiz Lizondo SL'
     images:
       - url: '~/assets/images/default.png'
         width: 1200
