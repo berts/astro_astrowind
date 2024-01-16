@@ -1,10 +1,10 @@
 site:
   name: 'GAF Ruiz Lizondo SL'
-  site: 'https://gafruizlizondo.pages.dev'
+  site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: false
+  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
@@ -16,7 +16,7 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: 'GAF Ruiz Lizondo SL'
+    site_name: GAF Ruiz Lizondo SL
     images:
       - url: '~/assets/images/default.png'
         width: 1200
