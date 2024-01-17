@@ -19,36 +19,27 @@ const metadata = {
   ignoreTitleTemplate: false,
 };
 ---
-
 <Layout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
-
-  <Hero2
-    tagline="Le damos la bienvenida a"
-    actions={[
-      {
-        variant: 'primary',
-        text: '¿Tiene una incidencia?',
-        href: 'https://incidencia.app/incidencia/',
-        target: '_blank',
-      },
-      { text: '¿Quiere más información?', href: '#features' },
-      { text: 'Actualización de datos', href: 'https://datos.ruizlizondo.com',target: '_blank',icon: 'tabler:brand-tailwind'}
-    ]}
-    image={{ src: '~/assets/images/Ordenador_Colegiacion.png', alt: 'Contrata un Adminsitrador de Fincas Colegiado' }}
-  >
-  <Fragment slot="title">
-    GAF <span class="inline xl:hidden"><br /></span>Ruiz Lizondo
-    <span class="hidden xl:inline"><br /><span class="text-cyan-600">Administradores de Fincas </span><span class="text-red-700 dark:text-white highlight">Colegiados</span> </span>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Login',
+          href: '#',
+        },
+        {
+          variant: 'primary',
+          text: 'Sign Up',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
   </Fragment>
-
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Con nuestros años de experiencia, nuestra profesionalidad, y nuestros medios técnicos gestionados con vocación de excelencia conseguimos prestar un servicio de calidad y de plena satisfacción en la <span class="font-semibold">Administración de Fincas en Zaragoza</span> .
-        <br />Más de <span class="font-semibold">40 años</span> nos permiten saber cómo lograr tu tranquilidad.
-    </Fragment>
-  </Hero2>
-  <!-- Hero Widget ******************* 
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
 
   <Hero
     actions={[
@@ -79,7 +70,7 @@ const metadata = {
       & Blogs.
     </Fragment>
   </Hero>
--->
+
   <!-- Note Widget ******************* -->
 
   <Note />

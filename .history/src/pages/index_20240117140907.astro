@@ -24,18 +24,15 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Le damos la bienvenida a"
+    tagline="SaaS Web Demo"
     actions={[
-      {
-        variant: 'primary',
-        text: '¿Tiene una incidencia?',
-        href: 'https://incidencia.app/incidencia/',
-        target: '_blank',
-      },
-      { text: '¿Quiere más información?', href: '#features' },
-      { text: 'Actualización de datos', href: 'https://datos.ruizlizondo.com',target: '_blank',icon: 'tabler:brand-tailwind'}
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/Ordenador_Colegiacion.png', alt: 'Contrata un Adminsitrador de Fincas Colegiado' }}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
   >
   <Fragment slot="title">
     GAF <span class="inline xl:hidden"><br /></span>Ruiz Lizondo
@@ -44,11 +41,13 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Con nuestros años de experiencia, nuestra profesionalidad, y nuestros medios técnicos gestionados con vocación de excelencia conseguimos prestar un servicio de calidad y de plena satisfacción en la <span class="font-semibold">Administración de Fincas en Zaragoza</span> .
-        <br />Más de <span class="font-semibold">40 años</span> nos permiten saber cómo lograr tu tranquilidad.
+        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
+      >
+       Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft websites that resonate with your brand and
+      audience.
     </Fragment>
   </Hero2>
-  <!-- Hero Widget ******************* 
+  <!-- Hero Widget ******************* -->
 
   <Hero
     actions={[
@@ -79,7 +78,7 @@ const metadata = {
       & Blogs.
     </Fragment>
   </Hero>
--->
+
   <!-- Note Widget ******************* -->
 
   <Note />
