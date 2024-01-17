@@ -19,7 +19,7 @@ export interface Props extends Widget {
 
 const {
   title = await Astro.slots.render("title"),
-  linkText = "Ir al archivo de noticias",
+  linkText = "View all posts",
   linkUrl = getBlogPermalink(),
   information = await Astro.slots.render("information"),
   count = 4,
