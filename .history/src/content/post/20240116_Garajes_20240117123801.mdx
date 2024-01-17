@@ -1,0 +1,69 @@
+---
+publishDate: 2024-01-16T00:00:00Z
+title: Uso del Garaje en las Comunidades
+excerpt: La gestión del uso del garaje en las comunidades puede ser un tema de debate. En Administración de Fincas Cañavate, nos dedicamos a promover soluciones que armonicen el bienestar individual con el colectivo, respetando las normativas internas y fomentando la convivencia pacífica.
+image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+category: Documentation
+tags:
+  - astro
+  - tailwind css
+  - front-end
+#metadata:
+#  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+---
+
+import DListItem from '~/components/ui/DListItem.astro';
+
+<DListItem dt="assets/styles/tailwind.css">
+  This file is essentially an extension of _TailWind's_ base.css. High-level component styles are defined here. Note
+  also styling on elements selected by 'attribute' selectors at the bottom of the files, particularly those selected by
+  'data' attributes.
+</DListItem>
+<DListItem dt="components/CustomStyles.astro">
+  Defines custom colors and fonts. For these to take effect in the 'base.css' file, they need to be loaded in the html
+  header section. See next.
+</DListItem>
+<DListItem dt="layouts/Layout.astro">
+  This layout is used for all of the pages rendered by _AstroWind_. The contents of _tailwind.css_ and
+  _CustomStyles.astro_ component, described above, is injected into the html header.
+</DListItem>
+
+
+```astro
+<CallToAction
+  callToAction={{
+    text: 'Get template',
+    href: 'https://github.com/onwidget/astrowind',
+    icon: 'tabler:download',
+  }}
+>
+  <Fragment slot="title">
+    Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't waste
+    more time! :P
+  </Fragment>
+</CallToAction>
+```
+```astro
+
+> ## Resumen
+> La gestión del uso del garaje en las comunidades puede ser un tema de debate. En Administración de Fincas Cañavate, nos dedicamos a promover soluciones que armonicen el bienestar individual con el colectivo, respetando las normativas internas y fomentando la convivencia pacífica.
+
+---
+
+La **ambigüedad legal** existente ha provocado diferentes interpretaciones entre los residentes de las comunidades, originando debates acerca de si es adecuado utilizar el garaje como trastero. Esta situación, en muchos casos, ha sido fuente de tensiones y malentendidos entre los vecinos.
+
+Ante esto, **Administración de Fincas Cañavate** se compromete a resolver estas diferencias fomentando el diálogo y trabajando en la búsqueda de acuerdos que respeten la convivencia armónica entre los propietarios.
+
+Es fundamental entender que, a pesar de la falta de claridad en la ley, las **reglas internas** de cada comunidad son clave. Estas normas dictan cómo deben usarse los espacios comunes, incluyendo el garaje, y es esencial que todos los miembros de la comunidad las acaten.
+
+El **entendimiento y respeto mutuos** son vitales para preservar una atmósfera agradable y cooperativa. Por ello, incentivamos a los propietarios a dialogar para llegar a soluciones que atiendan las necesidades individuales, sin perjudicar el bienestar general.
+
+Una gestión adecuada del garaje implica reconocer la importancia del uso compartido de este espacio, evitando bloqueos, desorden o uso excesivo que pueda entorpecer el tránsito o el acceso de vehículos.
+
+El uso apropiado del garaje asegura no solo la seguridad, sino también la funcionalidad y la comodidad para todos los residentes.
+
+En resumen, en Administración de Fincas Cañavate defendemos una gestión del garaje justa y acordada en las comunidades, promoviendo siempre el respeto a las normativas y la convivencia pacífica entre los propietarios, buscando soluciones beneficiosas para toda la comunidad.

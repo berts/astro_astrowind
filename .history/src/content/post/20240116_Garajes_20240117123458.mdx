@@ -1,0 +1,49 @@
+---
+publishDate: 2024-01-16T00:00:00Z
+title: Uso Garajes 
+excerpt: While easy to get started, Astrowind is quite complex internally.  This page provides documentation on some of the more intricate parts.
+image: https://images.unsplash.com/photo-1534307671554-9a6d81f4d629?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1651&q=80
+category: Documentation
+tags:
+  - astro
+  - tailwind css
+  - front-end
+#metadata:
+#  canonical: https://astrowind.vercel.app/astrowind-template-in-depth
+---
+
+import DListItem from '~/components/ui/DListItem.astro';
+
+<DListItem dt="assets/styles/tailwind.css">
+  This file is essentially an extension of _TailWind's_ base.css. High-level component styles are defined here. Note
+  also styling on elements selected by 'attribute' selectors at the bottom of the files, particularly those selected by
+  'data' attributes.
+</DListItem>
+<DListItem dt="components/CustomStyles.astro">
+  Defines custom colors and fonts. For these to take effect in the 'base.css' file, they need to be loaded in the html
+  header section. See next.
+</DListItem>
+<DListItem dt="layouts/Layout.astro">
+  This layout is used for all of the pages rendered by _AstroWind_. The contents of _tailwind.css_ and
+  _CustomStyles.astro_ component, described above, is injected into the html header.
+</DListItem>
+
+
+
+<CallToAction
+  callToAction={{
+    text: 'Get template',
+    href: 'https://github.com/onwidget/astrowind',
+    icon: 'tabler:download',
+  }}
+>
+  <Fragment slot="title">
+    Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't waste
+    more time! :P
+  </Fragment>
+</CallToAction>
+
