@@ -7,7 +7,6 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -91,15 +90,15 @@ const metadata = {
     <Features3
     title="Let us know how we can help"
     subtitle="We’re here to help and answer any question you might have."
-    columns={3 }
+    columns={4}
     items={[
       {
         title: 'Phone',
         icon: 'tabler:phone',
         callToAction: {
           target: '_blank',
-          text: 'Llámenos',
-          href: 'tel://976234666',
+          text: 'Call us',
+          href: '/',
           variant: 'link',
         },
       },
@@ -123,7 +122,16 @@ const metadata = {
           variant: 'link',
         },
       },
-
+      {
+        title: 'Chat with support',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+          text: 'Start chatting',
+          href: '/',
+          variant: 'link',
+        },
+      },
     ]}
   />
 
