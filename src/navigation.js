@@ -38,13 +38,24 @@ export const footerData = {
     {
       title: '',
       links: [
-        { text: '', href: '' },
+        {
+          text: 'Política de Cookies',
+          href: getPermalink('/legal/cookies'),
+        },
+       {
+        text: 'Política de Privacidad',
+          href: getPermalink('/legal/privacidad'),
+        },
+       {
+        text: 'Aviso Legal',
+        href: getPermalink('/legal/aviso_legal'),
+      },
       ],
     },
   ],
   secondaryLinks: [
 
-    { text: 'Política de Privacidad', href: getPermalink('/privacy') },
+    { text: 'Noticias', href: getPermalink('/noticias') },
     
   ],
   socialLinks: [
