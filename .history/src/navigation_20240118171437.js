@@ -13,20 +13,8 @@ export const headerData = {
       ],
     },
     {
-      text: 'Textos Legales',
-       links: [
-        {
-          title'Política de Cookies',
-          href: getPermalink('/legal/cookies'),
-        },
-       {
-          title'Política de Privacidad',
-          href: getPermalink('/legal/privacidad'),
-        },
-       {
-        title'Aviso Legal',
-        href: getPermalink(''/legal/aviso_legal'),
-      },
+      text: 'Política de Privacidad',
+       links: [title:'Política de Privacidad',href: '/privacy',
       ],
     },
   ],
