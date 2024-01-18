@@ -16,16 +16,16 @@ export const headerData = {
       text: 'Textos Legales',
        links: [
         {
-          title'Política de Cookies',
+          text: 'Política de Cookies',
           href: getPermalink('/legal/cookies'),
         },
        {
-          title'Política de Privacidad',
+        text: 'Política de Privacidad',
           href: getPermalink('/legal/privacidad'),
         },
        {
-        title'Aviso Legal',
-        href: getPermalink(''/legal/aviso_legal'),
+        text: 'Aviso Legal',
+        href: getPermalink('/legal/aviso_legal'),
       },
       ],
     },
