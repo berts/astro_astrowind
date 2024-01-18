@@ -1,0 +1,61 @@
+---
+import Features from '~/components/widgets/Features.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import { headerData } from '~/navigation';
+const metadata = {
+  title: 'Aviso Legal',
+};
+---
+
+<Layout metadata={metadata}>
+  
+    <Header  />
+  
+
+_Last updated_: January 06, 2023
+
+
+El presente sitio web tiene un carácter meramente informativo, no constituyendo en ningún caso un medio de asesoramiento sobre ninguna de las áreas especificadas en el mismo, para lo cual el usuario deberá dirigirse a:
+ <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Why choose AstroWind?"
+    subtitle="Each of the following features enhances AstroWind's value proposition."
+    columns={2}
+    items={[
+      {
+        title: 'Integration of Astro 4.0 and Tailwind CSS',
+        description:
+          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Versatile design for startups, small businesses, and more',
+        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Effortless customization for portfolios and marketing sites',
+        description:
+          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Optimized landing pages and engaging blogs',
+        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+        icon: 'tabler:podium',
+      },
+      {
+        title: 'Fast loading times and production-ready code',
+        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'SEO-optimized structure for enhanced visibility',
+        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
+        icon: 'tabler:eyeglass',
+      },
+    ]}
+  />
