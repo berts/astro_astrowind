@@ -1,0 +1,46 @@
+<Fragment>
+  <script>
+    import "https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0/dist/cookieconsent.umd.js";
+
+    CookieConsent.run({
+      autoShow: true,
+      categories: {
+        necessary: {
+          enabled: true,
+        },
+        analytics: {
+          enabled: false,
+        },
+      },
+      language: {
+        default: "es",
+        translations: {
+          es: {
+            consentModal: {
+              label: "Consentimiento de cookies",
+              title: "Si, usamos cookies y tecnologías similares",
+              description:
+                "Descripción de las cookies",
+              acceptAllBtn: "Acceptar todas",
+              acceptNecessaryBtn: "Acceptar las necesarias",
+              showPreferencesBtn: "Personalizar elección",
+              footer: `
+              <a href="/legal/aviso_legal" target="_blank">Aviso legal</a>
+              <a href="/legal/privacidad" target="_blank">Política de Privacidad</a>
+          `,
+            },
+            preferencesModal: {
+              title: "Cookie Preferences Center",
+              acceptAllBtn: "Acceptar todas",
+              acceptNecessaryBtn: "Acceptar solo necesarias",
+              savePreferencesBtn: "Accept la selección actual",
+              closeIconLabel: "Close modal",
+              sections: [],
+            },
+          },
+        },
+      },
+    });
+  </script>
+
+</Fragment>;
