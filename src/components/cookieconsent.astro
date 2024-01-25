@@ -17,6 +17,10 @@
         translations: {
           es: {
             consentModal: {
+              layout: 'cloud',               // box/cloud/bar
+              position: 'middle center',     // bottom/middle/top + left/right/center
+              transition: 'slide',           // zoom/slide
+              swap_buttons: false ,           // enable to invert buttons
               label: "Consentimiento de cookies",
               title: "Si, usamos cookies y tecnologías similares",
               description:
@@ -29,6 +33,11 @@
               <a href="/legal/privacidad" target="_blank">Política de Privacidad</a>
           `,
             },
+            settings_modal: {
+                  layout: 'box',                 // box/bar
+                  // position: 'left',           // left/right
+                  transition: 'slide'            // zoom/slide
+              },
             preferencesModal: {
               title: "Personalización de cookies",
               acceptAllBtn: "Acceptar todas",
@@ -42,5 +51,6 @@
       },
     });
   </script>
+
 
 </Fragment>;

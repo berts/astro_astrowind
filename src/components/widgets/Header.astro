@@ -5,6 +5,8 @@ import ToggleTheme from "~/components/common/ToggleTheme.astro";
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
 import Button from "~/components/ui/Button.astro"
 
+import CookieConsent from '~/components/cookieconsent.astro';
+
 import { getHomePermalink } from "~/utils/permalinks";
 import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
@@ -57,6 +59,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
   {...isSticky ? { "data-aw-sticky-header":  true } : {}}
   {...id ? { id } : {}}
 >
+<CookieConsent />
   <div class="absolute inset-0"></div>
   <div
     class:list={[
