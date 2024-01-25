@@ -13,21 +13,23 @@
     "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/rss": "^4.0.3",
+    "@astrojs/sitemap": "^3.0.5",
     "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.5",
     "@fontsource-variable/inter": "^5.0.16",
-    "astro": "^4.1.1",
+    "@jop-software/astro-cookieconsent": "^2.0.0",
+    "astro": "^4.2.4",
     "astro-icon": "^1.0.2",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
     "typescript-esbuild": "^0.3.5",
-    "unpic": "^3.16.0"
+    "unpic": "^3.16.0",
+    "vanilla-cookieconsent": "^2.9.2"
   },
   "devDependencies": {
-    "@astrojs/mdx": "^2.0.3",
-    "@astrojs/partytown": "^2.0.3",
+    "@astrojs/mdx": "^2.1.0",
+    "@astrojs/partytown": "^2.0.4",
     "@astrojs/tailwind": "5.1.0",
     "@iconify-json/flat-color-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.103",
