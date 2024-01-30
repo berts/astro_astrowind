@@ -28,7 +28,28 @@ const {
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
-      <!--Inicio imagen -->
+      <div class="basis-3/4 text-center lg:text-left pb-10 md:pb-16 mx-auto">
+        <div >
+          {
+            tagline && (
+              <p
+                class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+                set:html={tagline}
+              />
+            )
+          }
+          {
+            title && (
+              <h1
+                class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+                set:html={title}
+              />
+            )
+          }
+      
+        </div>
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+                <!--Inicio imagen -->
       <div class="basis-1/4">
         {
           image && (
@@ -51,44 +72,25 @@ const {
         }
       </div>
       <!--Fin imagen -->
-      <div class="basis-3/4 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-        <div >
-          {
-            tagline && (
-              <p
-                class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
-                set:html={tagline}
-              />
-            )
-          }
-          {
-            title && (
-              <h1
-                class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
-                set:html={title}
-              />
-            )
-          }
-      
-        </div>
-        <div class="max-w-3xl mx-auto lg:max-w-none">
-          {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
+          <div class="mb-8 md:mb-16 lg:mb-20">
+            {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
 
-          {
-            actions && (
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
-                {Array.isArray(actions) ? (
-                  actions.map((action) => (
-                    <div class="flex w-full sm:w-auto">
-                      <Button {...(action || {})} class="w-full sm:mb-0" />
-                    </div>
-                  ))
-                ) : (
-                  <Fragment set:html={actions} />
-                )}
-              </div>
-            )
-          }
+            {
+              actions && (
+                <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
+                  {Array.isArray(actions) ? (
+                    actions.map((action) => (
+                      <div class="flex w-full sm:w-auto">
+                        <Button {...(action || {})} class="w-full sm:mb-0" />
+                      </div>
+                    ))
+                  ) : (
+                    <Fragment set:html={actions} />
+                  )}
+                </div>
+              )
+            }
+          </div>
         </div>
         {content && <Fragment set:html={content} />}
       </div>
