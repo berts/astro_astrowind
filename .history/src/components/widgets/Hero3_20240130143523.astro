@@ -51,25 +51,6 @@ const {
         }
       </div>
       <div class="basis-3/4 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-        <div >
-          {
-            tagline && (
-              <p
-                class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
-                set:html={tagline}
-              />
-            )
-          }
-          {
-            title && (
-              <h1
-                class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
-                set:html={title}
-              />
-            )
-          }
-      
-        </div>
         <div class="max-w-3xl mx-auto lg:max-w-none">
           {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
 
