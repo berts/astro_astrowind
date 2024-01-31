@@ -1,5 +1,5 @@
 site:
-  name: 'GAF Ruiz Lizondo'
+  name: 'GAF Ruiz Lizondo <span class="hidden xl:inline">SL</span>'
   site: 'https://gafruizlizondo.pages.dev'
   base: '/'
   trailingSlash: false

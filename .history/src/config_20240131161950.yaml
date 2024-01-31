@@ -1,5 +1,5 @@
 site:
-  name: 'GAF Ruiz Lizondo'
+  name: 'GAF Ruiz Lizondo SL'
   site: 'https://gafruizlizondo.pages.dev'
   base: '/'
   trailingSlash: false
@@ -9,7 +9,7 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'GAF Ruiz Lizondo SL'
+    default: 'GAF Ruiz Lizondo'
     template: '%s — GAF Ruiz Lizondo SL'
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:

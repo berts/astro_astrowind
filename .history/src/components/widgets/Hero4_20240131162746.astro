@@ -45,7 +45,7 @@ const {
               {
                 title && (
                   <h1
-                    class="text-5xl md:text-6xl  font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+                    class="text-5xl md:text-6xl md:text-center font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
                     set:html={title}
                   />
                 )
@@ -55,7 +55,7 @@ const {
               <p class="mt-4 text-white">
                 
 {
-  subtitle && <p class="text-xl  text-muted mb-6 text-slate-300" set:html={subtitle} />
+  subtitle && <p class="text-xl  md:text-center text-muted mb-6 text-slate-300" set:html={subtitle} />
   }
 
               </p>
