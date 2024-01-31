@@ -36,7 +36,7 @@ const {
               {
                 tagline && (
                   <span
-                    class="text-base text-blue-200 dark:text-blue-200 font-bold tracking-wide uppercase"
+                    class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
                     set:html={tagline}
                   />
                 )
@@ -64,10 +64,10 @@ const {
           <div class="flex mt-8 lg:w-1/2 lg:justify-end lg:mt-0">
               <div class="w-full max-w-md bg-white rounded-lg dark:bg-gray-800">
                   <div class="px-6 py-8 text-center">
-                    
+                      <h2 class="text-2xl font-semibold text-gray-700 dark:text-white fo">Sign In</h2>
                       {
                         actions && (
-                          <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-col sm:flex-col gap-4 lg:justify-start lg:m-0 lg:flex-col">
+                          <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
                             {Array.isArray(actions) ? (
                               actions.map((action) => (
                                 <div class="flex w-full sm:w-auto">
