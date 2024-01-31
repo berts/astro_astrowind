@@ -21,6 +21,12 @@ const {
   image = await Astro.slots.render('image'),
 } = Astro.props;
 ---
+<section class="relative md:-mt-[176px] not-prose">
+
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+<!-- lo de arriba sobra? -->
 <div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
  
  {

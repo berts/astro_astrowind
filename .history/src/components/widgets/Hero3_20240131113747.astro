@@ -22,71 +22,38 @@ const {
 } = Astro.props;
 ---
 <div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+  {
+    image && (
+      <div class="relative m-auto max-w-5xl">
+        {typeof image === 'string' ? (
+          <Fragment set:html={image} />
+        ) : (
  
- {
-  image && (
-    <div class="">
-      {typeof image === 'string' ? (
-        <Fragment set:html={image} />
-      ) : (
+        class="absolute top-0 left-0 min-h-full ob" alt="">
         <Image
-          class="absolute top-0 left-0 min-h-full ob"
-          
-          {...image}
-        />
-      )}
-    </div>
-  )
-}
+                  class="absolute top-0 left-0 min-h-full ob"
+                  loading="eager"
+                  {...image}
+                />
+              )}
   <div class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
     <div class="col-span-6">
-      {
-        tagline && (
-          <span
-            class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
-            set:html={tagline}
-          />
-        )
-      }
-      {
-        title && (
-          <h1
-            class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
-            set:html={title}
-          />
-        )
-      }
-            {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
-
-            {
-              actions && (
-                <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
-                  {Array.isArray(actions) ? (
-                    actions.map((action) => (
-                      <div class="flex w-full sm:w-auto">
-                        <Button {...(action || {})} class="w-full sm:mb-0" />
-                      </div>
-                    ))
-                  ) : (
-                    <Fragment set:html={actions} />
-                  )}
-                </div>
-              )
-            }
-                    {content && <Fragment set:html={content} />}
+      <span class="uppercase text-white text-xs font-bold mb-2 block">WE ARE EXPERTS</span>
+      <h1 class="text-white font-extrabold text-5xl mb-8">Finpoint provides Financial Consulting in different ways</h1>
+      <p class="text-stone-100 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <button class="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">Get started</button>
     </div>
   </div>
 </div>
-<!-- 
 <section class="relative md:-mt-[176px] not-prose">
 
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
--->
       <!--Inicio imagen -->
-<!-- 
       <div class="basis-1/4">
         {
           image && (
@@ -108,9 +75,7 @@ const {
           )
         }
       </div>
--->
       <!--Fin imagen -->
-<!-- 
       <div class="basis-3/4 text-center lg:text-left pb-10 md:pb-16 mx-auto">
         <div >
           {
@@ -155,4 +120,3 @@ const {
     </div>
   </div>
 </section>
--->
