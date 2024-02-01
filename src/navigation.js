@@ -6,29 +6,7 @@ export const headerData = {
       text: 'Inicio',
       href: '/',
     },
-    {
-      text: 'Noticias',
-      href: getBlogPermalink(),
-      links: [
-      ],
-    },
-    {
-      text: 'Textos Legales',
-       links: [
-        {
-          text: 'Política de Cookies',
-          href: getPermalink('/legal/cookies'),
-        },
-       {
-        text: 'Política de Privacidad',
-          href: getPermalink('/legal/privacidad'),
-        },
-       {
-        text: 'Aviso Legal',
-        href: getPermalink('/legal/aviso_legal'),
-      },
-      ],
-    },
+  
   ],
   actions: [{ text: 'Comunicar Incidencia', href: 'https://incidencia.app', target: '_blank' }],
 };
@@ -38,24 +16,11 @@ export const footerData = {
     {
       title: '',
       links: [
-        {
-          text: 'Política de Cookies',
-          href: getPermalink('/legal/cookies'),
-        },
-       {
-        text: 'Política de Privacidad',
-          href: getPermalink('/legal/privacidad'),
-        },
-       {
-        text: 'Aviso Legal',
-        href: getPermalink('/legal/aviso_legal'),
-      },
+       
       ],
     },
   ],
   secondaryLinks: [
-
-    { text: 'Noticias', href: getPermalink('/noticias') },
     { text: 'Comunicar Incidencia', href: 'https://incidencia.app', icon: 'tabler.alert-triangle', },
     
   ],
